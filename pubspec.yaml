@@ -1,0 +1,4 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.0+2
