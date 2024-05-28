@@ -1,0 +1,1 @@
+ /Users/aszm/Documents/Ecofier/ecofier_frontend/.dart_tool/flutter_build/5245ca8f55bf06a298a90e118aa69992/native_assets.yaml: 
