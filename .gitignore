@@ -14,5 +14,7 @@ doc/api/
 
 # Mac
 .DS_Store
+
+# Other
 android/settings.gradle
 /.dart_tool
