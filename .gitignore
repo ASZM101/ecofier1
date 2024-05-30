@@ -31,3 +31,6 @@ android/gradle/wrapper/gradle-wrapper.jar
 
 # Other
 .flutter-plugins-dependencies
+.flutter-plugins
+ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+macos/Flutter/GeneratedPluginRegistrant.swift
