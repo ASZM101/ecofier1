@@ -1,36 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
-List<CameraDescription> cameras = <CameraDescription>[];
+List<CameraDescription> cameras;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   cameras = await availableCameras();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: const CameraScreen(),
+      home: CameraScreen(),
     );
   }
 }
 
 class CameraScreen extends StatefulWidget {
-  const CameraScreen({super.key});
-
   @override
   _CameraScreenState createState() => _CameraScreenState();
 }
 
 class _CameraScreenState extends State<CameraScreen> {
-  late CameraController controller;
+  CameraController controller;
 
   @override
   void initState() {
@@ -50,17 +45,17 @@ class _CameraScreenState extends State<CameraScreen> {
 
   @override
   void dispose() {
-    controller.dispose();
+    controller?.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    if (!controller.value.isInitialized) {
-      return const Center(child: CircularProgressIndicator());
+    if (controller == null || !controller.value.isInitialized) {
+      return Center(child: CircularProgressIndicator());
     }
     return Scaffold(
-      appBar: AppBar(title: const Text('Camera Access')),
+      appBar: AppBar(title: Text('Camera Access')),
       body: CameraPreview(controller),
     );
   }
