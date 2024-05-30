@@ -23,3 +23,14 @@
 hs_err_pid*
 replay_pid*
 .DS_Store
+/.dart_tool
+/android/.gradle
+/android/.idea
+android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+build/app/generated/source/buildConfig/debug/com/aszm101/ecofier_frontend/BuildConfig.java
+/build
+/ios/.symlinks
+/ios/Flutter
+/macos/Flutter/ephemeral
+/ios/Runner
+ios/Runner.xcworkspace/xcuserdata/aszm.xcuserdatad/UserInterfaceState.xcuserstate
