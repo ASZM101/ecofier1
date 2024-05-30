@@ -15,4 +15,3 @@ doc/api/
 # Mac
 .DS_Store
 android/settings.gradle
-/.dart_tool
