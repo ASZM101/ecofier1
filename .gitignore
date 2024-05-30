@@ -18,4 +18,3 @@ doc/api/
 # Other
 android/settings.gradle
 /.dart_tool
-.flutter-plugins-dependencies
